@@ -1,3 +1,15 @@
+/* Essa parte refere-se aos itens do Google maps */
+#map {
+    height: 300px;
+    width: 500px;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    align-content: center
+    margin: 20px;
+    padding: 10px;
+  }
+
 /* reset do site */
 
 *{

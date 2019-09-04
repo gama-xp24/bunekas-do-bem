@@ -79,6 +79,19 @@
 
     <div class="borda"></div>
 
+
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -23.5114, lng: -46.8729},
+          zoom: 10
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCacXOsUQLTro4T2hCx02WFCcz-FbKvde8&callback=initMap"
+    async defer></script>
 </body>
 
 
