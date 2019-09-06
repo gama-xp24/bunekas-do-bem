@@ -3,15 +3,18 @@ html, body {
     width: 100%;
 }
 
+/* Fundo */
+.containerComFaixa{
+    background-image: url('../imagens/Imagem\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
 
 /* menu do site mais video */
 #header {
     background-color: pink;
     height: 600px;
 }
-
-
-
 
 /* divisão que fala do projeto bunekas */
 #projeto {

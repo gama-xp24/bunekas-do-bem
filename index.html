@@ -3,7 +3,7 @@
 
     <head>
         <title>Projeto BUNEKAS</title>
-        <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
@@ -11,28 +11,27 @@
         <meta charset="keywords" content="palavras,separadas,por,virgula" />
         <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="author" content="Bruno Ricardo" />
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
     </head>
-
-
     <body>
-        
-        <div class="container-fluid">
 
-           
+    <div class="containerComFaixa">
+    <lu>
+        <li></li>
+        <li></li>
+        <li></li>
+    </lu></div>
+    </div>
+    <div class="container">
+        <div class="container-fluid">
             <div class="row" id="header"> 
                 <div class="col-12" >
-
                     <div id="ytplayer"></div>
-
                     <script>
                     // Load the IFrame Player API code asynchronously.
                     var tag = document.createElement('script');
                     tag.src = "https://www.youtube.com/player_api";
                     var firstScriptTag = document.getElementsByTagName('script')[0];
                     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            
                     // Replace the 'ytplayer' element with an <iframe> and
                     // YouTube player after the API code downloads.
                     var player;
@@ -55,11 +54,48 @@
                 <div class="col-sm-6" id="texto">
                     <h2>O projeto</h2>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-
-                    
                 </div><!--texto projeto-->
 
                 <div class="col-sm-6" id="foto">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./imagens/carrossel01.jpg" alt="Primeiro Slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/carrossel02.jpeg" alt="Segundo Slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/carrossel03.jpg" alt="Terceiro Slide">
+                                 </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/carrossel04.jpg"
+                                    alt="Quarto Slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/carrossel05.jpg"
+                                    alt="Quinto Slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/carrossel06.jpg"
+                                    alt="Sexto Slide">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Anterior</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Próximo</span>
+                                </a>
+                              </div>
                 </div><!--foto-->
                 
             </div><!--projeto-->
@@ -117,9 +153,11 @@
 
                 </div><!--criado a coluna-->
             </div><!--footer-->
-
         </div><!--container-fluid-->
-            
+    </div><!--container-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
     </body>
 
 </html>
