@@ -3,161 +3,197 @@
 
     <head>
         <title>Projeto BUNEKAS</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
         <meta charset="description" content="conteudo do meu site" />
         <meta charset="keywords" content="palavras,separadas,por,virgula" />
         <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="author" content="Bruno Ricardo" />
+        <meta charset="author" content="Bruno Ricardo, Gustavo Suto" />
     </head>
+
     <body>
 
-    <div class="containerComFaixa">
-    <lu>
-        <li></li>
-        <li></li>
-        <li></li>
-    </lu></div>
-    </div>
-    <div class="container">
+        <div class="containerComFaixa">
+            <lu>
+                <li></li>
+                <li></li>
+                <li></li>
+            </lu>
+        </div><!--containerComFaixa-->
+
         <div class="container-fluid">
+            
             <div class="row" id="header"> 
                 <div class="col-12" >
-                    <div id="ytplayer"></div>
-                    <script>
-                    // Load the IFrame Player API code asynchronously.
-                    var tag = document.createElement('script');
-                    tag.src = "https://www.youtube.com/player_api";
-                    var firstScriptTag = document.getElementsByTagName('script')[0];
-                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                    // Replace the 'ytplayer' element with an <iframe> and
-                    // YouTube player after the API code downloads.
-                    var player;
-                    function onYouTubePlayerAPIReady() {
-                        player = new YT.Player('ytplayer', {
-                        height: '360',
-                        width: '640',
-                        videoId: 'M7lc1UVf-VE'
-                        });
-                    }
-                    </script><!--API youtube-->
 
-                </div><!--criado a coluna-->
+                    <div class="logo">
+                        <img src="imagens/logo_bunekas.jpg" />
+                    </div><!--logo-->
+
+                    <div class="video">
+                        <video controls src="video/TESTE.mp4" width="600" height="300"></video>
+                    </div><!--video-->
+                    
+                    <div class="foto">
+                        <img src="imagens/imagemVideo.jpeg" />
+                    </div><!--foto-->
+
+                </div><!--coluna do video-->
             </div><!--header-->
-            
-
-
-        
-            <div class="row" id="projeto" > 
-                <div class="col-sm-6" id="texto">
-                    <h2>O projeto</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                </div><!--texto projeto-->
-
-                <div class="col-sm-6" id="foto">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                                </ol>
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./imagens/carrossel01.jpg" alt="Primeiro Slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./imagens/carrossel02.jpeg" alt="Segundo Slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./imagens/carrossel03.jpg" alt="Terceiro Slide">
-                                 </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./imagens/carrossel04.jpg"
-                                    alt="Quarto Slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./imagens/carrossel05.jpg"
-                                    alt="Quinto Slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./imagens/carrossel06.jpg"
-                                    alt="Sexto Slide">
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Anterior</span>
-                                      </a>
-                                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Próximo</span>
-                                </a>
-                              </div>
-                </div><!--foto-->
                 
+
+
+            <!-- divisão do site onde fala do projeto -->
+            <div class="row" id="projeto" > 
+                <div class="col-12" id="display-flex">
+                    
+                    <div class="texto">
+                        <h2>Projeto</h2>
+                        <p>O Projeto Bunekas, idealizado pela pscicóloga Michelli Bordinhon Dezani no início de 2017, confecciona bonecas, vestidos e acessórios para crianças africanas por meio de trabalho voluntario de mulheres de diversas cidades do Brasil. Nossa missão é incentivar o brincar e promover a autoestima de crianças africanas por meio de bonecas e vestidos confeccionados por voluntarias.</p>
+                    </div><!--texto-->
+                
+                    <div class="container1">
+                        <div  id="slideFotos" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators -->
+                             <ul class="carousel-indicators">
+                                <li data-target="#slideFotos" data-slide-to="0" class="active"></li>
+                                <li data-target="#slideFotos" data-slide-to="1"></li>
+                                <li data-target="#slideFotos" data-slide-to="2"></li>
+                                <li data-target="#slideFotos" data-slide-to="3"></li>
+                                <li data-target="#slideFotos" data-slide-to="4"></li>
+                                <li data-target="#slideFotos" data-slide-to="5"></li>
+                            </ul>
+                            
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagens/carrossel01.jpg"  alt=" " width="880" height="450">
+                                </div><!--carousel-item active-0-->
+                                <div class="carousel-item">
+                                    <img src="imagens/carrossel02.jpeg" alt=" " width="880" height="450">
+                                </div><!--carousel-item-1-->
+                                <div class="carousel-item">
+                                    <img src="imagens/carrossel03.jpg" alt=" " width="880" height="450">
+                                </div><!--carousel-item-2-->
+                                <div class="carousel-item">
+                                    <img src="imagens/carrossel04.jpeg" alt=" " width="880" height="450">
+                                </div><!--carousel-item-3-->
+                                <div class="carousel-item">
+                                    <img src="imagens/carrossel05.jpeg" alt=" " width="880" height="450">
+                                </div><!--carousel-item-4-->
+                                <div class="carousel-item">
+                                    <img src="imagens/carrossel06.jpeg" alt=" " width="880" height="450">
+                                </div><!--carousel-item-5-->
+                            </div><!--carousel-inner-->
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#slideFotos" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a><!--prev-->
+    
+                            <a class="carousel-control-next" href="#slideFotos" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a><!--next-->
+
+
+                        </div><!--slide-->        
+                    </div><!--container1-->
+                </div><!--coluna display-flex-->
             </div><!--projeto-->
 
 
-            <div class="row" id="bunekometro"> 
-                <div class="col-12">
-                    <h2>BUNEKOMETRO</h2>
-                    <span>100.000 bonecas entregues</span>
-                </div><!--criado a coluna-->
-            </div><!--bunekometro-->
+                <!-- divisão do site onde esta o bunekometro-->
+
+                <div class="row" id="bunekometro"> 
+                    <div class="col-12">
+                        <h2><u>BUNEKOMETRO</u></h2>
+                        <div class="roda">
+                        <img src="imagens/rodaBunekasSITE.jpg" />
+                        </div><!--roda-->
+                    </div><!--criado a coluna-->
+                </div><!--bunekometro-->
 
 
-            <div class="row" id="mas-pq">
-                
-                
-                <div class="col-12">
-                    <h2>Mas por que a Africa</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                </div><!--criado a coluna-->
-            </div><!--mas-pq-->
+                <!-- divisão do site que fala do por que a Africa-->
+                <div class="row" id="pq-africa">
 
-                
+                    <div class="col-12" id="display-flex">
+                        
+                        <div class="texto2">
+                            <h2><u>Mas por que a Africa</u></h2>
+                        </div><!--testo2-->
+
+                        <div class="fotoAfrica">
+                            <img src="imagens/Mapas.jpg" width="880" height="450" />
+                        </div><!--fotoAfrica-->
             
+                    </div><!--criado a coluna-->
+
+                </div><!--pq-africa-->
+
+                    
+                
+                <!-- divisão do site que esta o maps -->
+                <div class="row" id="local"> 
+                    <div class="col-12" id="display-flex">
+                        
+                        <div class="maps">
+                            <div id="map">
+                                <script>
+                                    var map;
+                                    function initMap() {
+                                    map = new google.maps.Map(document.getElementById('map'), {
+                                        center: {lat: -23.5114, lng: -46.8729},
+                                        zoom: 10
+                                    });
+                                    }
+                                </script>
+                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCacXOsUQLTro4T2hCx02WFCcz-FbKvde8&callback=initMap"
+                                async defer></script>
+                            </div><!--map-->
+                        </div><!--maps-->
+
+                        <div class="texto3">
+                            <h2><u>Onde estamos</u></h2>
+                        </div><!--texto3-->
+
+                    </div><!--displayflex-->
+                </div><!--local-->
+
+
+
+                <!-- divisão do site que esta os icones de rede social-->
+                <div class="row" id="footer"> 
+                    <div class="col-12" id="display-flex">
+
+                        <div class="FotoBuneka">
+                            <img src="imagens/logo_bunekas.jpg" />
+                        </div><!--FotoBuneka-->
+
+                        <div class="socialMedia">
+                            <img src="imagens/instagram.png" />
+                            <img src="imagens/facebook.png" />
+                        </div><!--socialMedia-->
+
+                    </div><!--criado a coluna-->
+                </div><!--footer-->
             
-            <div class="row" id="local"> 
-                <div class="col-sm-6" id="maps">
-                        <div id="map"></div>
-                        <script>
-                            var map;
-                            function initMap() {
-                            map = new google.maps.Map(document.getElementById('map'), {
-                                center: {lat: -23.5114, lng: -46.8729},
-                                zoom: 10
-                            });
-                            }
-                        </script>
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCacXOsUQLTro4T2hCx02WFCcz-FbKvde8&callback=initMap"
-                        async defer></script>
-                </div><!--google maps-->
-
-                <div class="col-sm-6" id="texto">
-                    <h2>Mas por que a Africa</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                </div><!--criado a coluna-->
-            </div><!--criado outra linha-->
-
-
-
-
-            <div class="row" id="footer"> 
-                <div class="col-12">
-
-                </div><!--criado a coluna-->
-            </div><!--footer-->
         </div><!--container-fluid-->
-    </div><!--container-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+
+        <div class="containerComFaixa">
+            <lu>
+                <li></li>
+                <li></li>
+                <li></li>
+            </lu>
+        </div><!--containerComFaixa-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
     </body>
 
 </html>

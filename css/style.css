@@ -3,70 +3,153 @@ html, body {
     width: 100%;
 }
 
+/*.row, .col {
+    border: 2px solid black;
+}
+*/
+
+
 /* Fundo */
 .containerComFaixa{
     background-image: url('../imagens/Imagem\ 1.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    }
+}
 
 /* menu do site mais video */
 #header {
-    background-color: pink;
     height: 600px;
 }
 
-/* divisão que fala do projeto bunekas */
-#projeto {
-    height: 400px;
+.video {
+    text-align: center;
+}
+.foto {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.logo {
+    text-align: left;
     margin-top: 15px;
 }
 
-#texto {
-    background-color:rgb(218, 186, 219);
-    border-radius: 40px;
-    height: 360px;
+
+/* divisão que fala do projeto bunekas */
+#projeto{
+    margin-top: 15px;
+    height: 500px;
 }
 
-#projeto > #texto > p {
-    text-align: justify;
+#display-flex {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.texto {
     width: 400px;
-    
+    height: 450px;
+    border-radius: 40px;
+    text-align: left;
+    margin: 15px;
+    background-color: rgba(255, 123, 0, 0.685);
 }
 
-#foto {
-    background-image: url(../imagens/buneka.jpeg);
+.texto h2{
+    text-align: justify;
+    margin: 0 0 20px 20px;
+}
+
+.texto p{
+    width: 300px;
+    height: 350px;
+    text-align: justify;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.container1 {
+    width: 880px;
+    height: 450px;
+    border: 1px solid black;
+    text-align: right;
+    margin: 15px;
 }
 
 
 /*bunekodromo*/
-#bunekometro {
-    height: 200px;
-    background-color: orange;
-    margin-top: 15px;
+.roda {
+    text-align: center;
+}
+
+#bunekometro h2 {
+    font-size: 50px;
 }
 
 
 /* mas por que a Africa */
-#mas-pq{
-    margin-top: 15px;
-    background-image: url(../imagens/crianca.jpeg);
-    background-size: cover;
-    height: 700px;
 
+#pq-africa {
+    height: 500px;
+    margin-top: 15px;
 }
 
-
-#mas-pq p {
-    text-align: justify;
+.texto2{
     width: 400px;
+    height: 450px;
+    text-align: left;
+    margin: 15px;
+    background-color: blue;
+    border-radius: 30px;
 }
 
-/* localização */
+.texto2 h2 {
+    margin: 15px;
+}
+
+.fotoAfrica{
+    width: 880px;
+    height: 450px;
+    text-align: right;
+    margin: 15px;
+}
+
+/* google maps e local */
+
 #local {
-    height: 400px;
+    height: 500px;
     margin-top: 15px;
 }
+
+#map {
+    height: 450px;
+    width: 700px;
+  }
+
+.maps{
+    width: 700px;
+    height: 450px;
+    text-align: left;
+    margin: 15px;
+}
+
+.texto3{
+    width: 400px;
+    height: 450px;
+    text-align: left;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+.texto3 h2 {
+    margin: 15px;
+    text-align: right;
+}
+
+
+
+
 
 /* Essa parte refere-se aos itens do Google maps */
 #map {
@@ -79,7 +162,14 @@ html, body {
 
 #footer {
     height: 150px;
-    background-color: black;
+    /*border: 1px solid black; */
     margin-top: 15px;
 }
 
+.FotoBuneka{
+    text-align: left;
+}
+
+.socialMedia{
+    text-align: right;
+}
