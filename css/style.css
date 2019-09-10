@@ -9,8 +9,15 @@ html, body {
 
 
 
-/* Fundo */
+/* Faixa Superior */
 .containerComFaixa{
+    background-image: url('../imagens/Imagem\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Faixa Superior */
+.containerComFaixaInferior{
     background-image: url('../imagens/Imagem\ 1.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
